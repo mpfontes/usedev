@@ -54,5 +54,35 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .cabecalho__nav_list {
+        grid-template-areas:
+            "logo sobre login perfil carrinho"
+            "input input input input input";
+        grid-template-columns: 1fr 2fr .5fr .5fr .5fr;
+    }
+
+    .cabecalho__logo {
+        grid-area: logo;
+        justify-self: center;
+    }
+
+    .cabecalho__nav_list_item-sobre {
+        grid-area: sobre;
+    }
+
+    .cabecalho__nav_list_item-login {
+        grid-area: login;
+    }
+
+    .cabecalho__nav_list_item-perfil {
+        grid-area: perfil;
+    }
+
+    .cabecalho__nav_list_item-carrinho {
+        grid-area: carrinho;
+    }
+
+    .cabecalho__nav_list_item-input {
+        grid-area: input;
+    }
 }
